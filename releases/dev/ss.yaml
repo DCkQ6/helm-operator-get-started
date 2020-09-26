@@ -1,0 +1,14 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: sealed-secrets-controller
+  namespace: kube-system
+  annotations:
+    fluxcd.io/automated: "true"
+spec:
+  releaseName: sealed-secrets-controller
+  chart:
+    git: git@github.com:helm/charts.git
+    path: stable/sealed-secrets
+    ref: master
