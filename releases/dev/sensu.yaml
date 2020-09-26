@@ -15,3 +15,7 @@ spec:
   values:
     postgresql:
       postgresqlPassword: somepassword
+    ingress:
+      enabled: true
+    nginx:
+      enabled: false
