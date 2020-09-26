@@ -2,8 +2,8 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: sensu
-  namespace: sensu
+  name: sentry
+  namespace: sentry
   annotations:
     fluxcd.io/automated: "true"
 spec:
