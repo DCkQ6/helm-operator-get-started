@@ -1,0 +1,14 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: sensu
+  namespace: sensu
+  annotations:
+    fluxcd.io/automated: "true"
+spec:
+  releaseName: podinfo-dev
+  chart:
+    git: git@github.com:sentry-kubernetes/charts.git
+    path: sentry
+    ref: 5.2.2
