@@ -12,3 +12,6 @@ spec:
     git: git@github.com:sentry-kubernetes/charts.git
     path: sentry
     ref: 5.2.2
+  values:
+    postgresql:
+      postgresqlPassword: somepassword
