@@ -9,6 +9,7 @@ metadata:
 spec:
   releaseName: sealed-secrets-controller
   chart:
-    git: git@github.com:helm/charts.git
-    path: stable/sealed-secrets
-    ref: master
+    repository: https://kubernetes-charts.storage.googleapis.com
+    path: sealed-secrets
+    version: 1.10.3
+
